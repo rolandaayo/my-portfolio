@@ -1,0 +1,120 @@
+#dark {
+  transition: all 0.5s ease;
+}
+#light {
+  background-color: #e1e1e1;
+  transition: all 0.5s ease;
+  // navbar
+  .Link-color,
+  .inner-container-text {
+    color: #0b1728;
+  }
+  .inner-container-text {
+    font-weight: 500;
+    transition: 0.25 ease;
+  }
+  .Link-color:hover,
+  .Link-color:hover:after {
+    color: #000;
+  }
+  .Link-color::after {
+    background-color: #000;
+  }
+
+  .svg_name path {
+    fill: #0b1728 !important;
+    animation: none;
+  }
+  .icon-logo path {
+    fill: #000;
+  }
+  .mail-logo:hover svg path {
+    fill: #ea4335;
+    transition: all 0.25s ease-in-out;
+  }
+  .linkedin-logo a:hover svg path {
+    fill: #0077b5;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .About-container,
+  .Contact-container,
+  .Projects-container {
+    h1 {
+      color: #000;
+    }
+  }
+  .about-text_container {
+    p {
+      color: #0b1728;
+      font-weight: 500;
+    }
+  }
+  .info-logo_right_flex p {
+    color: #0b1728;
+    font-weight: 600;
+  }
+
+  .face {
+    background-color: #0b1728c0;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 8px 0px rgb(7, 27, 53);
+    z-index: -1;
+  }
+
+  // projects
+  .tabs-container_flex,
+  .tabs-container_flex_reverse {
+    background-color: #0b1728;
+
+    h1 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    .projects_languages span {
+      background-color: transparent;
+      color: #f5f5f5;
+      font-weight: 500;
+    }
+  }
+  .btn {
+    border: 1px solid #0e0d0d;
+    color: #161616;
+  }
+  .btn.active {
+    border: none;
+  }
+
+  ::placeholder {
+    color: #525252;
+  }
+
+  .card-icon svg path,
+  .address-icon svg path {
+    fill: #0e0d0d;
+  }
+  .card-icon,
+  .address-icon {
+    span {
+      color: #111;
+    }
+  }
+
+  .success-message {
+    color: #111;
+  }
+
+  .credit-portfolio-link {
+    color: #111;
+    font-weight: 500;
+  }
+  input,
+  textarea {
+    color: #111;
+  }
+}
