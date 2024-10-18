@@ -36,8 +36,8 @@ export const TabsData1 = [
     languages: ["ReactJS", "SCSS"],
     img: portfolio,
     class: "tabs-container_flex_reverse",
-    link: "https://jmlsoteyza.vercel.app/",
-    githubLink: "https://github.com/Jmlsoteyza/Portfolio",
+    link: "https://rolandayo.vercel.app/",
+    githubLink: "https://github.com/rolandaayo/my-portfolio",
   },
 ];
 
@@ -48,9 +48,9 @@ export const TabsData2 = [
     desc: "I have created a website that features a pixel-art editor that I learned the methods from Eloquent Javascript book. This online tool allows users to create pixel art, a graphic aesthetic that originated from 8- and 16-bit computers.",
     languages: ["HTML", "CSS", "Javascript"],
     class: "tabs-container_flex",
-    link: "https://jmlsoteyza.github.io/Pixel-Art-Editor/",
+    link: "https://rolandaayo.github.io/Pixel-Art-Editor/",
     img: pae,
-    githubLink: "https://github.com/Jmlsoteyza/Pixel-Art-Editor",
+    githubLink: "https://github.com/rolandaayo/Pixel-Art-Editor",
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ export const TabsData2 = [
     languages: ["HTML", "CSS", "Javascript"],
     class: "tabs-container_flex_reverse",
     link: "https://jmlsoteyza-clock-time.netlify.app/",
-    githubLink: "https://github.com/Jmlsoteyza/Wall-Clock",
+    githubLink: "https://github.com/rolandaayo/Wall-Clock",
     img: wallclock,
   },
   {
