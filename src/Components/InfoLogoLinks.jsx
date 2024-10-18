@@ -13,13 +13,13 @@ const InfologoLinks = [
     id: 2,
     img: github,
     img2: github2,
-    link: "https://github.com/codebyroland",
+    link: "https://github.com/rolandaayo",
   },
   {
     id: 3,
     img: ig,
     img2: ig2,
-    link: "https://www.instagram.com/thealphagram/",
+    link: "https://www.instagram.com/rolandaayo/",
   },
   {
     id: 1,

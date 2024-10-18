@@ -44,13 +44,13 @@ export const TabsData1 = [
 export const TabsData2 = [
   {
     id: 1,
-    title: "Pixel-Art-Editor",
-    desc: "I have created a website that features a pixel-art editor that I learned the methods from Eloquent Javascript book. This online tool allows users to create pixel art, a graphic aesthetic that originated from 8- and 16-bit computers.",
+    title: "Shopping Cart",
+    desc: "I have created a website that features a shopping cart function, where I learned the methods from Eloquent Javascript book. This e-commerce shopping cart website lets you add more than one product to the cart, then automatically sums up total of products added to cart.",
     languages: ["HTML", "CSS", "Javascript"],
     class: "tabs-container_flex",
-    link: "https://rolandaayo.github.io/Pixel-Art-Editor/",
+    link: "https://rolandaayo.github.io/shopping-cart/",
     img: pae,
-    githubLink: "https://github.com/rolandaayo/Pixel-Art-Editor",
+    githubLink: "https://github.com/rolandaayo/shopping-cart",
   },
   {
     id: 2,
