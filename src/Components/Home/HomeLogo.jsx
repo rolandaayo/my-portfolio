@@ -6,7 +6,7 @@ const HomeLogo = ({ lineStyle }) => {
     <div className="bottom-icons">
       <span className="line-icons" style={lineStyle}></span>
       <div className="github-logo">
-        <a href="https://github.com/codebyroland">
+        <a href="https://github.com/rolandaayo">
           <svg
             width="21"
             height="19"

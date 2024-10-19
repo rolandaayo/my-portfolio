@@ -16,8 +16,8 @@ export const TabsData1 = [
     // img: kicksae,
     img: project1Img,
     class: "tabs-container_flex",
-    link: "https://codebyroland.github.io/skyhigh-product/",
-    githubLink: "https://github.com/codebyroland/skyhigh-product",
+    link: "https://rolandaayo.github.io/skyhigh-product/",
+    githubLink: "https://github.com/rolandaayo/skyhigh-product",
   },
   {
     id: 2,
@@ -26,8 +26,8 @@ export const TabsData1 = [
     languages: ["ReactJS", "SCSS"],
     img: project2Img,
     class: "tabs-container_flex_reverse",
-    link: "https://codebyroland.github.io/micro-podcast//",
-    githubLink: "https://github.com/codebyroland/micro-podcast",
+    link: "https://rolandaayo.github.io/micro-podcast//",
+    githubLink: "https://github.com/rolandaayo/micro-podcast",
   },
   {
     id: 4,
