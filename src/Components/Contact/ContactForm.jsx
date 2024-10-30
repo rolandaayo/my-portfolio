@@ -1,4 +1,3 @@
-import React from "react";
 import ContactUse from "./ContactUse";
 import Validation from "./Validation";
 
@@ -8,9 +7,28 @@ const ContactForm = ({ handleSucessForm }) => {
     handleSucessForm
   );
 
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/6CCVXkJSQ";
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await fetch(FORMSPARK_ACTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+      handleForm(e);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <div className="form-container">
-      <form className="form" ref={form} onSubmit={handleForm}>
+      <form className="form" ref={form} onSubmit={onSubmit}>
         <div className="input-container">
           <input
             type="name"
@@ -44,6 +62,12 @@ const ContactForm = ({ handleSucessForm }) => {
       </form>
     </div>
   );
+};
+
+import PropTypes from 'prop-types';
+
+ContactForm.propTypes = {
+  handleSucessForm: PropTypes.func.isRequired,
 };
 
 export default ContactForm;
