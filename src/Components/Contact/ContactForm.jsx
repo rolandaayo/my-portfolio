@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ContactUse from "./ContactUse";
 import Validation from "./Validation";
 
@@ -7,10 +8,12 @@ const ContactForm = ({ handleSucessForm }) => {
     handleSucessForm
   );
 
+  const [isLoading, setIsLoading] = useState(false)
   const FORMSPARK_ACTION_URL = "https://submit-form.com/6CCVXkJSQ";
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true)  
     try {
       await fetch(FORMSPARK_ACTION_URL, {
         method: "POST",
@@ -24,6 +27,7 @@ const ContactForm = ({ handleSucessForm }) => {
     } catch (error) {
       console.error("Error:", error);
     }
+    setIsLoading(false)
   };
 
   return (
@@ -58,7 +62,7 @@ const ContactForm = ({ handleSucessForm }) => {
           />
           {errors.message && <p style={{ color: "red" }}>{errors.message}</p>}
         </div>
-        <input type="submit" value="Send Message" />
+        <input disabled={isLoading} type="submit" value="Send Message" />
       </form>
     </div>
   );
