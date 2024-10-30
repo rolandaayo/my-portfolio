@@ -13,6 +13,7 @@ const ContactForm = ({ handleSucessForm }) => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    if (isLoading) return;
     setIsLoading(true)  
     try {
       await fetch(FORMSPARK_ACTION_URL, {
@@ -40,6 +41,7 @@ const ContactForm = ({ handleSucessForm }) => {
             placeholder="Name"
             onChange={handleValue}
             value={values.name}
+            disabled={isLoading}
           />
           {errors.name && <p style={{ color: "red" }}>{errors.name}</p>}
         </div>
@@ -50,6 +52,7 @@ const ContactForm = ({ handleSucessForm }) => {
             placeholder="Email"
             onChange={handleValue}
             value={values.email}
+            disabled={isLoading}
           />
           {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
         </div>
@@ -59,10 +62,11 @@ const ContactForm = ({ handleSucessForm }) => {
             onChange={handleValue}
             value={values.message}
             placeholder="Message"
+            disabled={isLoading}
           />
           {errors.message && <p style={{ color: "red" }}>{errors.message}</p>}
         </div>
-        <input disabled={isLoading} type="submit" value="Send Message" />
+        <input disabled={isLoading} type="submit" value={isLoading ? "Sending..." : "Send Message"} />
       </form>
     </div>
   );
