@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect, useContext } from "react";
 import GradientColors from "./GradiantColors";
 import InfologoLinks from "./InfoLogoLinks";

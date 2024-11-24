@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
+import PropTypes from "prop-types";
 import { TabsData1 } from "./ProjectsData";
 import "../../Styles/gradient.css";
 
@@ -56,6 +58,11 @@ const ProjectsTab1 = ({ tabsValue, lineStyle }) => {
       )}
     </div>
   );
+};
+
+ProjectsTab1.propTypes = {
+  tabsValue: PropTypes.number.isRequired,
+  lineStyle: PropTypes.object.isRequired,
 };
 
 export default ProjectsTab1;
