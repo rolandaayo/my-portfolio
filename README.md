@@ -3,7 +3,7 @@
 
 A portfolio is an extraordinary medium for demonstrating to business owners, hiring managers, tech recruiters, or anyone the skills and projects you've built.
 
-<a href="(https://rolandayo.vercel.app/"><strong>➥ Live Demo</strong></a>
+<a href="https://rolandayo.vercel.app/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
